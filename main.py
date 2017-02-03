@@ -33,33 +33,25 @@ def build_form(username_error, password_error, verify_error, email_error):
         <body>
             <h1>Signup</h1>
             <form name = "username" method = "post">
-                <label>
-                    Username:
+                <label>Username:</label>
                     <input type = "text" name = "username" />
-                </label>
-                <p class="error">""" + username_error + """</p>
-            <br>
+                <span class="error">""" + username_error + """</span>
+                <br>
             <form name = "password" method = "post">
-                 <label>
-                     Password:
+                 <label>Password: </label>
                      <input type = "text" name = "password"/>
-                 </label>
-                 <p class="error">""" + password_error +"""</p>
-            <br>
+                 <span class="error">""" + password_error +"""</span>
+                 <br>
             <form name = "verify" method = "post" >
-                <label>
-                    Verify Password:
+                <label>Verify Password:</label>
                     <input type = "text" name = "verify" />
-                </label>
-                <p class="error">""" + verify_error + """</p>
-            <br>
+                <span class="error">""" + verify_error + """</span>
+                <br>
             <form name = "email" method = "post">
-                <label>
-                    Email (Optional):
+                <label>Email (Optional):</label>
                     <input type = "text" name = "email"/>
-                </label>
-                <p class="error">""" + email_error + """</p>
-            <br>
+                <span class="error">""" + email_error + """</span>
+                <br>
             <form>
                 <input type= "submit" value= "submit"/>
             </form>
