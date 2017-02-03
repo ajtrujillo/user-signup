@@ -117,7 +117,8 @@ class MainHandler(webapp2.RequestHandler):
         if not valid_password(password):
             password_error = "That is not a valid password."
             have_error = True
-        elif password != verify:
+
+        if password != verify:
             verify_error = "The passwords did not match."
             have_error = True
 
